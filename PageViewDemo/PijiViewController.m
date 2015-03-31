@@ -20,13 +20,15 @@
     // Do any additional setup after loading the view.
     self.button = [[UIButton alloc] init];
     self.button.tintColor = [UIColor blueColor];
-    self.button.backgroundColor = [UIColor redColor];
-    self.button.titleLabel.text = @"fesse book";
+    [self.button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.button setTitle:@"FesseBook" forState:UIControlStateNormal];
     self.button.translatesAutoresizingMaskIntoConstraints = NO;
     
     self.control = [[UIPageControl alloc] init];
+    self.control.backgroundColor = [UIColor blackColor];
     self.control.currentPageIndicatorTintColor = [UIColor redColor];
     self.control.pageIndicatorTintColor = [UIColor blueColor];
+    self.control.currentPage = 0;
     self.control.translatesAutoresizingMaskIntoConstraints = NO;
     
     [self.view addSubview:self.button];
@@ -62,9 +64,9 @@
     NSDictionary *metrics = @{
                    kMinWidth : @100,
                    kMaxWidth : @300,
-                   kMinHeight : @100,
-                   kParentHSpacing : @80,
-                   kParentVSpacing : @50
+                   kMinHeight : @60,
+                   kParentHSpacing : @40,
+                   kParentVSpacing : @20
                    };
                                
     
