@@ -19,8 +19,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
-        
     }
     
     return self;
@@ -32,9 +30,6 @@
 
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     self.titleLabel.text = self.titleText;
-
-    
-   
 }
 
 - (void)didReceiveMemoryWarning
