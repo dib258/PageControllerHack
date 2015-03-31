@@ -33,10 +33,10 @@
         }
     }
     
-    self.control = thisControl;
+    self.control = [[UIPageControl alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.control.pageIndicatorTintColor = [UIColor redColor];
-    CGRect frame = self.control.frame;
-    self.control.frame = CGRectMake(250, 500, 200, 200);
+    
+    NSDictionary *viewsDic = NSDictionaryOfVariableBindings(label, self.control);
 }
 
 - (void)didReceiveMemoryWarning {
