@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87D37AB21AC9E34900F1437D /* PijiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D37AB11AC9E34900F1437D /* PijiViewController.m */; };
+		C8CA5E881ACB5DCB008998D2 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA5E871ACB5DCB008998D2 /* FXPageControl.m */; };
 		F42D5AC31841F8A500F8636D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42D5AC21841F8A500F8636D /* Foundation.framework */; };
 		F42D5AC51841F8A500F8636D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42D5AC41841F8A500F8636D /* CoreGraphics.framework */; };
 		F42D5AC71841F8A500F8636D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42D5AC61841F8A500F8636D /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 		87D37AAD1AC9E2FD00F1437D /* PageViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PageViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		87D37AB01AC9E34900F1437D /* PijiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PijiViewController.h; sourceTree = "<group>"; };
 		87D37AB11AC9E34900F1437D /* PijiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PijiViewController.m; sourceTree = "<group>"; };
+		C8CA5E861ACB5DCB008998D2 /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
+		C8CA5E871ACB5DCB008998D2 /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
 		F42D5ABF1841F8A500F8636D /* PageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42D5AC21841F8A500F8636D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F42D5AC41841F8A500F8636D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -150,6 +153,8 @@
 		F42D5AC91841F8A500F8636D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8CA5E861ACB5DCB008998D2 /* FXPageControl.h */,
+				C8CA5E871ACB5DCB008998D2 /* FXPageControl.m */,
 				F42D5ACA1841F8A500F8636D /* PageViewDemo-Info.plist */,
 				F42D5ACB1841F8A500F8636D /* InfoPlist.strings */,
 				F42D5ACE1841F8A500F8636D /* main.m */,
@@ -279,6 +284,7 @@
 			files = (
 				87D37AB21AC9E34900F1437D /* PijiViewController.m in Sources */,
 				F42D5AD91841F8A500F8636D /* ViewController.m in Sources */,
+				C8CA5E881ACB5DCB008998D2 /* FXPageControl.m in Sources */,
 				F42D5AD31841F8A500F8636D /* AppDelegate.m in Sources */,
 				F42D5AFC184213B200F8636D /* PageContentViewController.m in Sources */,
 				F42D5ACF1841F8A500F8636D /* main.m in Sources */,

@@ -7,9 +7,10 @@
 //
 
 #import "PijiViewController.h"
+#import "FXPageControl.h"
 
 @interface PijiViewController ()
-@property (nonatomic, strong) UIPageControl *control;
+@property (nonatomic, strong) FXPageControl *control;
 @property (nonatomic, strong) UIButton *button;
 @end
 
@@ -25,12 +26,11 @@
     self.button.translatesAutoresizingMaskIntoConstraints = NO;
     [self.button addTarget:self action:@selector(faceBookPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    self.control = [[UIPageControl alloc] init];
-    self.control.backgroundColor = [UIColor blackColor];
-    self.control.currentPageIndicatorTintColor = [UIColor redColor];
-    self.control.pageIndicatorTintColor = [UIColor blueColor];
-    self.control.currentPage = 0;
+    self.control = [[FXPageControl alloc] init];
     self.control.translatesAutoresizingMaskIntoConstraints = NO;
+    self.control.backgroundColor = [UIColor whiteColor];
+    self.control.numberOfPages = 5;
+    self.control.currentPage = 0;
     
     [self.view addSubview:self.button];
     [self.view addSubview:self.control];
@@ -99,10 +99,5 @@
     [self.view addConstraints:horizontalConstraints1];
     [self.view addConstraints:horizontalConstraints2];
                                
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 @end
