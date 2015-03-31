@@ -23,6 +23,7 @@
     [self.button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.button setTitle:@"FesseBook" forState:UIControlStateNormal];
     self.button.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.button addTarget:self action:@selector(faceBookPressed) forControlEvents:UIControlEventTouchUpInside];
     
     self.control = [[UIPageControl alloc] init];
     self.control.backgroundColor = [UIColor blackColor];
@@ -49,6 +50,9 @@
     [self setupConstraints];
 }
 
+- (void) faceBookPressed {
+    NSLog(@"Facebook pressed");
+}
 - (void) setupConstraints {
     
     UIControl *control = self.control;
